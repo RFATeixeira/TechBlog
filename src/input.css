@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.pholder {
+  font-size: 18px;
+  color: #7c7c8a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .cardB {
+    @apply flex flex-col h-[156px] items-center w-full rounded-b-lg border-graythree border-t-0 border-2 hover:bg-grayfour transition duration-500 ease-in-out;
+  }
+
+  .card {
+    @apply w-full xl:w-96 hover:cursor-pointer border-transparent hover:border-brandcolor border-2 p-[2px] rounded-xl rounded-t-lg transition duration-300;
+  }
+
+  .cardTitle {
+    @apply font-semibold h-[60px] text-lg xl:text-xl mt-3  pl-4 pr-4 text-ellipsis overflow-hidden;
+  }
+
+  .cardDesc {
+    @apply text-sm xl:text-lg w-full h-[66px] md:h-[56px] mt-2 pb-6 pl-4 pr-4 text-ellipsis overflow-hidden;
+  }
+
+  .btn {
+    @apply bg-brandcolor h-12 text-white rounded font-semibold hover:bg-brandcolortwo transition duration-300;
+  }
+
+  .plholder {
+    @apply w-full border-graytwo rounded border-[1px] transition duration-500 focus:placeholder-transparent focus:border-[2px] focus:border-brandcolor outline-none;
+  }
+}
