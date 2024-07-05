@@ -41,7 +41,7 @@ html {
   }
 
   .btn {
-    @apply bg-brandcolor h-12 text-white rounded font-semibold hover:bg-brandcolortwo transition duration-300;
+    @apply bg-brandcolor py-3 text-white rounded font-semibold hover:bg-brandcolortwo transition duration-300;
   }
 
   .plholder {
